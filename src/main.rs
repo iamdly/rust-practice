@@ -2,6 +2,7 @@ mod p;
 
 use crate::p::p1;
 use crate::p::p2;
+use crate::p::p3;
 use clap::{ArgEnum, Parser};
 
 #[derive(Parser, Debug)]
@@ -20,6 +21,7 @@ enum P {
     P1,
     P2,
     P3,
+    P4,
 }
 
 fn main() {
@@ -31,6 +33,9 @@ fn main() {
         }
         P::P2 => {
             p2::run(args.sub_p.as_str());
+        }
+        P::P3 => {
+            p3::run(args.sub_p.as_str());
         }
         _ => {
             println!("未知");
