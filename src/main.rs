@@ -5,6 +5,7 @@ use crate::p::p2;
 use crate::p::p3;
 use crate::p::p4;
 use crate::p::p5;
+use crate::p::p6;
 use clap::{ArgEnum, Parser};
 
 #[derive(Parser, Debug)]
@@ -47,8 +48,8 @@ fn main() {
         P::P5 => {
             p5::run(args.sub_p.as_str());
         }
-        _ => {
-            println!("未知");
+        P::P6 => {
+            p6::run(args.sub_p.as_str());
         }
     }
 }
