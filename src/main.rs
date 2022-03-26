@@ -1,11 +1,6 @@
 mod p;
 
-use crate::p::p2;
-use crate::p::p3;
-use crate::p::p4;
-use crate::p::p5;
-use crate::p::p6;
-use crate::p::{p1, p7};
+use crate::p::{p1, p2, p3, p4,p5,p6, p7, p8};
 use clap::{ArgEnum, Parser};
 
 #[derive(Parser, Debug)]
@@ -28,6 +23,7 @@ enum P {
     P5,
     P6,
     P7,
+    P8,
 }
 
 fn main() {
@@ -54,6 +50,9 @@ fn main() {
         }
         P::P7 => {
             p7::run();
+        }
+        P::P8 => {
+            p8::run();
         }
     }
 }

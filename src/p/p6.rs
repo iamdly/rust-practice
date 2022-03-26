@@ -1,5 +1,4 @@
 use std::cell::RefCell;
-use std::fmt::format;
 use std::rc::Rc;
 
 // Definition for a binary tree node.
